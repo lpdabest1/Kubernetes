@@ -9,12 +9,12 @@
 # Do NOT obtain state of superuser (root) for this following portion of the script
 # Set up the repository
 # installing necessary packages needed before usingrepo
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release
+    lsb-release -y 
 
 # Add Docker's official GPG key
 sudo mkdir -p /etc/apt/keyrings
