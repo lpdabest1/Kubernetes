@@ -20,6 +20,9 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 
 # Create a local cluster
+# Note: for this specific creation of a local cluster, you should be under superuser permissions (root)
+
+sudo su -
 
 # Generate a cluster config
 CLUSTER_NAME=dev-cluster
