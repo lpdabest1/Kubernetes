@@ -16,12 +16,10 @@ sudo apt-get install \
     gnupg \
     lsb-release
 
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-
 # Add Docker's official GPG key
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
 
 # Setting up the repo
 echo \
@@ -31,10 +29,10 @@ echo \
 
 # Install Docker Engine
 # Update the apt package index
-sudo apt-get update
+sudo apt-get update -y
 
 # Install Docker Engine, containerd, and Docker Compose (Latest Versions)
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 
 # Verify that Docker runs correctly
 sudo docker run hello-world
