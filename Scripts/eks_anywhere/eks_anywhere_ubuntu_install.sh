@@ -46,7 +46,7 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 test -r ~/.bash_profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bash_profile
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
 
-sudo apt-get install build-essential procps curl file git
+sudo apt-get install build-essential procps curl file git -y
 
 # ----------------------------------------------------------- #
 # EKS Anywhere Installation with Homebrew
